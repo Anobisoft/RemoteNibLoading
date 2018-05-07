@@ -36,7 +36,7 @@ static NSString * const kRemoteNibURL = @"http://www.slaunchaman.com/JKRemoteNib
                                                 cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
                                             timeoutInterval:60.0];
     
-    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+    [application setNetworkActivityIndicatorVisible:YES];
     
     [NSURLConnection sendAsynchronousRequest:nibRequest
                                        queue:[NSOperationQueue mainQueue]
